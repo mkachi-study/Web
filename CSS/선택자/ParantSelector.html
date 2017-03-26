@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>부모자식 선택자</title>
+	<meta charset="utf-8">
+	<style>
+	/*
+		ul태그 밑에 있는 li태그들만 빨간색으로 한다.
+	*/
+		ul li{
+			color:red;
+		}
+		/*
+			id값이 lucture의 직계 자식들만이 영향을 받는다.
+		*/
+		#lecture>li{
+			border: 1px solid red;
+		}
+
+		/*
+			ul태그와 ol태그들 모두 배경색 변경
+		*/
+		ul, ol{
+			background-color: powderblue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+
+	<ol id="lecture">
+		<li>HTML</li>
+		<li>CSS</li>
+			<ol>
+				<li>Selector</li>
+				<li>Declaration</li>
+			</ol>
+		<li>JavaScript</li>
+</body>
+</html>
