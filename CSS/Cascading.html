@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	/* 속성 style > id > class > 속성 선택자 순서로 우선순위가 정해진다. */
+	/* 누가 더 정교하게 선택됬느냐에 따라 우선순위가 정해진다고 생각하면됨 */
+	/* !important라는 속성을 사용하면 가장 높은 우선순위가 된다. */
+		li { color:red !important; }
+		#idSel { color:blue; }
+		.classSel { color:green; }
+	</style>
+	<title>Cascading</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<ul>
+		<li>HTML</li>
+		<li id="idSel" class="classSel" style="color:powderblue">CSS</li>
+		<li>JavaScript</li>
+	</ul>
+</body>
+</html>

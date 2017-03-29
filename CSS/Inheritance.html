@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/*
+		li { color:red; }
+		h1 { color:red; }
+		*/
+		/* css에서의 상속은 기본태그에 속성을 적용하여 하위 노드에도 부모와 같은 속성을 입히는 것을 의미
+		*/
+		html { color:green; }
+		#blackText { color:black; }
+
+		/* border라는 옵션과 같이 상속되지 않는 속성도 있다. */
+		body { border:1px solid red; }
+	</style>
+	<title>Inheritance</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>수업내용</h1>
+	<u1>
+		<li>Html</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li id="blackText">Test</li>
+	</u1>
+</body>
+</html>
