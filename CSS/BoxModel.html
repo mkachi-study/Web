@@ -2,12 +2,34 @@
 <html>
 <head>
 	<style>
-		
+		p, a{
+			border: 10px solid red;
+
+			/* 엘리먼트 안의 택스트와 태두리까지의 간격 */
+			padding:20px;
+
+			/* 엘리먼트와 엘리먼트 사이의 간격 */
+			margin:40px;
+			
+			/* 박스의 넓이를 지정가능  */
+			width : 400px;
+			/* 높이가 안에 들어있는 글자보다 작으면 이탈 */
+			height : 30px;
+		}
 	</style>
 	<title>BoxModel</title>
 	<meta charset="utf-8">
 </head>
 <body>
-
+	<p>
+		Lorem ipsum dolor sit amet, constejksfjalsdkjfa
+		afsdkfalsdjfaksldfjkalsd
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, constejksfjalsdkjfa
+		afsdkfalsdjfaksldfjkalsd
+	</p>
+	<!-- 인라인 모델에서는 width height를 무시한다 -->
+	안녕하세요<a href="http://www.naver.com/">게이버</a>
 </body>
 </html>
