@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html { border : 1px solid gray; }
+		div { 
+			border : 5px solid tomato; 
+			margin : 10px;
+		}
+		#me{
+			/* 
+				offset이라고 부름
+				position에 relative옵션을 주지 않으면 offset은 작동하지 않음
+				(기본값 : static )
+				relative 옵션은 부모 엘리먼트를 기준으로 해서 움직인다. local좌
+				left와 right 가 나오면 left우선
+				top과 bottom이 나오면 top우선
+			*/
+			position : relative;
+			left : 100px;
+			top : 100px;
+		}
+	</style>
+	<title>Position1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="other">other</div>
+	<div id="parent">
+		parent
+		<div id="me">me</div>
+	</div>
+</body>
+</html>
