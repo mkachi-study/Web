@@ -6,6 +6,130 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+        <table border=1>
+        <caption>
+            <strong>표 작성 예제</strong>
+            <p>표 작성 예제 입니다. 이 글은 캡션 태그로 작성됨</p>
+        </caption>
+            <tr>
+                <th>Row1</th>
+                <td>Test1</td>
+                <td>Test2</td>
+                <td>Test3</td>
+                <td>Test4</td>
+            </tr>
+            <tr>
+                <th>Row2</th>
+                <td>Test1</td>
+                <td>Test2</td>
+                <!-- 행 2개 합치기 -->
+                <td rowspan="2">Test3</td>
+                <td>Test4</td>
+            </tr>
+            <tr>
+                <th>Row3</th>
+                <td>Test1</td>
+                <!-- 열 2개 합치기 -->
+                <td colspan="2">Test2</td>
+                <td>Test3</td>
+            </tr>
+        </table>
+
+        <figure>
+            <figcaption>
+                <p>Figcaption으로 작성된 태그</p>
+            </figcaption>
+            <table border=1>
+                <tr>
+                    <th>Row1</th>
+                    <td>Test1</td>
+                    <td>Test2</td>
+                    <td>Test3</td>
+                    <td>Test4</td>
+                </tr>
+                <tr>
+                    <th>Row2</th>
+                    <td>Test1</td>
+                    <td>Test2</td>
+                    <!-- 행 2개 합치기 -->
+                    <td rowspan="2">Test3</td>
+                    <td>Test4</td>
+                </tr>
+                <tr>
+                    <th>Row3</th>
+                    <td>Test1</td>
+                    <!-- 열 2개 합치기 -->
+                    <td colspan="2">Test2</td>
+                    <td>Test3</td>
+                </tr>
+            </table>
+        </figure>
+        <!-- 표에 대한 설명을 제공 -->
+        <p id="TagSample">이 설명은 p태그로 작성하고 aria-describedby속성으로 연결함</p>
+        <table border=1 aria-describedby="TagSample">
+            <caption>표 제목</caption>
+            <tr>
+                <td>Row1</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+        </table>
+
+        <p id="TagSample2">표의 구조를 정리한 표</p>
+        <!-- 표의 구조를 정의 -->
+        <table border=1 aria-describedby="TagSample2">
+            <thead> <!-- Table Head 행의 제목 -->
+                <tr>
+                    <th>Title1</th>
+                    <th>Title2</th>
+                    <th>Title3</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Table Body 행의 내용 -->
+                <tr>
+                    <td>Test1</td>
+                    <td>Test2</td>
+                    <td>Test3</td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- Table Foot 행의 내용을 요약 -->
+                <tr>
+                    <td>요약1</td>
+                    <td>요약2</td>
+                    <td>요약3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table border=1>
+            <caption>
+                <p> colgrop태그와 col태그를 이용해서 색을 입힙니다.</p>
+            </caption>
+            <colgroup>
+                <col> <!-- 첫번째 칸은 어떤 스타일도 들어가지 않음 -->
+                <!-- 2번째 행부터 1칸 스타일을 적용 -->
+                <col span="1" style="background-color:aqua">
+                <col span="2" style="background-color:brown">
+            </colgroup>
+                <tr>
+                    <th>Title1</th>
+                    <th>Title2</td>
+                    <th>Title3</th>
+                    <th>Title4</th>
+                </tr>
+                <tr>
+                    <td>Test1</td>
+                    <td>Test2</td>
+                    <td>Test3</td>
+                    <td>Test4</td>
+                </tr>
+                <tr>
+                    <td>Test4</td>
+                    <td>Test5</td>
+                    <td>Test6</td>
+                    <td>Test7</td>
+                </tr>
+        </table>
+
     </body>
 </html>
