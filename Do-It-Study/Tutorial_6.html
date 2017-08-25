@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <fieldset> <!-- 그룹 박스를 만드는 듯 -->
+            <legend>개인정보</legend> <!-- 그룹 박스 Label붙이는 용도 -->
+            <ui>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="text" id="mail">
+                </li>
+            </ui>
+        </fieldset>
+        <form>
+            <!-- autofocus는 페이지를 불러오자마자 입력 커서를 이곳으로 둔다 -->
+            <input type="text" placeholder="아무거나 적어봥" autofocus>
+            <!-- readonly는 읽기 전용으로 바꾸어 값을 수정할 수 없게 한다 -->
+            <input type="text" value="읽기 전용" readonly>
+            <!-- required는 반드시 입력해야되는 input으로 만든다 -->
+            <input type="text" placeholder="반드시 입력해야됨" required>
+            <!-- min은 최소값 max는 최댓값 step은 증가되는 단위 -->
+            <input type="number" value="100" min="50" max="100" step="5">
+            <p>
+                <!-- size는 보여줄 문자의 갯수 minlength는 입력한 문자열의 최소 길이 maxlength 입력한 문자열의 최대 길이 -->
+                <input type="text" size="4" minlength="4" maxlength="10">
+                <small style="color:red;">4 ~ 10자리 이내의 영문과 숫자</small>
+            </p>
+            <textarea cols="40" rows="3"></textarea>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <select>
+            <option>Sample1</option>
+            <option>Sample2</option>
+            <option>Sample3</option>
+            <option>Sample4</option>
+        </select>
+
+        <!-- size는 표시할 리스트의 갯수, multiple은 다중선택 허용 -->
+        <select size="4" multiple>
+            <option value="Test1">Test1</option>
+            <option value="Test2">Test2</option>
+            <option value="Test3">Test3</option>
+            <option value="Test4">Test4</option>
+            <!-- value는 이 데이터들을 submit할 때 전송될 값, selected는 기본적으로 선택되어 있는 값 -->
+            <option value="Test5" selected>Test5</option>
+            <option value="Test6">Test6</option>
+            <option value="Test7">Test7</option>
+            <option value="Test8">Test8</option>
+        </select>
+
+        <!-- 선택지 리스트에 그룹을 놓음 -->
+        <select>
+            <optgroup label="Sample1">
+                <option value="Test1">Test1</option>
+                <option value="Test2">Test2</option>
+                <option value="Test3">Test3</option>
+            </optgroup>
+            <optgroup label="Sample2">
+                <option value="Test4">Test4</option>
+                <option value="Test5">Test5</option>
+                <option value="Test6">Test6</option>
+            </optgroup>
+        </select>
+
+        <!-- 자동완성 데이터 인듯...? -->
+        <input type="text" list="choices">
+        <datalist id="choices">
+            <option value="TTT1">TTT1</option>
+            <option value="TTT2">TTT2</option>
+            <option value="TTT3">TTT3</option>
+        </datalist>
+        <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+            <p>
+                <input type="number" name="num1" value="0">
+                +
+                <input type="number" name="num2" value="0">
+                =
+                <output name="result" for="num"></output>
+            </p>
+        </form>
+        <progress value="75" max="100"></progress>
+        <ul>
+            <li>
+                <label>점유율 0.8</label>
+                <meter value="0.8"></meter>
+            </li>
+            <li>
+                <label>사용량 64%</label>
+                <meter min="0" max="100" value="64"></meter>
+            </li>
+            <li>
+                <label>트래픽 초과</label>
+                <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+            </li>
+            <li>
+                <label>적절한 트래픽</label>
+                <meter value="0.5" optimum="0.8"></meter>
+            </li>
+        </ul>
+    </body>
+</html>
