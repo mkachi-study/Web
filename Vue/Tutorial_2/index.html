@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Events</h1>
+            <p>My age is {{ age }}</p>
+            <button @click.once="AddAge(1)">Up Age</button>
+            <button @click="AddAge(-1)">Down Age</button>
+            <button @click="AddAge(10)">Up 10 Age</button>
+            <button @click="AddAge(-10)">Down 10 Age</button>
+
+            <div id="canvas" @mousemove="UpdateXY">
+                {{x}}, {{y}}
+            </div>
+            <a @click.prevent="Click" href="http://www.naver.com">click.prevent Test</a>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

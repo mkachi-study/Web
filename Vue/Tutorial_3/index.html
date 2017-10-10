@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>키보드 이벤트</h1>
+            <label>이름 : </label>
+            <input type="text" @keyup.enter="LogName" v-model="name"/>
+            <span>{{name}}</span>
+            <label>나이 : </label>
+            <input type="text" @keyup.alt.enter="LogAge" v-model="age"/>
+            <span>{{age}}</span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
