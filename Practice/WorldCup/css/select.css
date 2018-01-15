@@ -1,0 +1,19 @@
+select.round-list {
+    border: white solid 1px;
+    border-radius: 10px;
+    
+    background-color: white;
+    color: #E42707;
+    
+    font: inherit;
+    font-style: bold;
+    font-size: 1em;
+    text-align: center;
+
+    width: 22em;
+    height: 2em;
+}
+
+option.round-list-data {
+    background-color: white;
+}

@@ -1,0 +1,31 @@
+button {
+    border: white solid 1px;
+    border-radius: 42px;
+    
+    background-color: transparent;
+    color: white;
+    
+    font: inherit;
+    font-size: 0.9em;
+
+    width: 140px;
+    height: 60px;
+}
+
+button:hover {
+    animation-name: button-over;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-over {
+    from {
+        color: white;
+        background-color: transparent;
+    }
+
+    to {
+        color: #E42707;
+        background-color: white;
+    }
+}
