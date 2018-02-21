@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav {
+            border-right: 1px solid gray;
+            order: 0;
+        }
+
+        aside {
+            border-left: 1px solid gray;
+            order: 1;
+        }
+
+        nav, aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+
+        main {
+            padding: 10px;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Test</h1>
+        </header>
+        <section class="content">
+            <main>
+                    끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에
+                    엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에
+                    에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asd
+                    fasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfas
+                    dfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에
+                    엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에
+                    에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdf
+                    dfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfas
+                    dfsadf에엑끄에에에에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에
+                    에에에에에에에에에에asdfasdfasdfasdfasdfasdfasdfsadf에엑끄에에에에에에에에에에에에에
+                    asdfasdfasdfasdfasdfasdfasdfsadf에엑!!!!!!!
+            </main>
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <aside>
+                광고
+            </aside>
+        </section>
+        <footer>
+            <a href="https://www.naver.com/">네이버</a>
+        </footer>
+    </div>
+</body>
+</html>
