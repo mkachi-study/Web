@@ -1,0 +1,8 @@
+{
+    "name": "Tutorial6",
+    "version": "1.0.0",
+    "dependencies": {
+        "ejs": "^2.5.7",
+        "express": "^4.16.2"
+    }
+}
