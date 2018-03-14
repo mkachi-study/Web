@@ -4,7 +4,7 @@ var infile = fs.createReadStream("./output.txt", { flags: "r" });
 var outFile = fs.createWriteStream("./output2.txt", { flags: "w" });
 
 infile.on("data", function(data) {
-	console.log("번째로 읽어 들인 데이터", data.toString());
+	console.log("읽어 들인 데이터 %s", data.toString());
 	outFile.write(data);
 });
 
