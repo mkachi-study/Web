@@ -20,6 +20,14 @@ var logger = new winston.Logger({
 			showLevel: true,
 			json: false,
 			timestamp: timeStampFormat
+		}),
+		new winston.transports.Console({
+			name: "debug-console",
+			Colorize: true,
+			level: "debug",
+			showLevel: true,
+			json: false,
+			timestamp: timeStampFormat
 		})
 	],
 	exceptionHandlers: [
