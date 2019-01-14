@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+        .item:nth-child(2) {
+            /* flex-direction에 해당되는 크기를 지정한다. */
+            /* flex-basis: 200px;  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div> <!-- nth-child(2) -->
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div> 
+    </div>    
+</body>
+</html>

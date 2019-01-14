@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #box1 {
+                background-color: #4cff00;
+                border: 1px solid black;
+                animation-name: Shape;
+                animation-duration: 3s;
+            }
+
+            #box2 {
+                background-color: #8f06b0;
+                border: 1px solid black;
+                animation-name: Rotate;
+                animation-duration: 3s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            @keyframes Shape {
+                from {
+                    border: 1px solid black;
+                }
+
+                to {
+                    border: 1px solid black;
+                    border-radius:  50%;
+                }
+            }
+
+            @keyframes Rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(45deg);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </body>
+</html>

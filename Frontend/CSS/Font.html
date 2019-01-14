@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1{
+			font-size:5rem;
+			/* 
+				arial이라는 폰트가 없으면 Times라는 폰트를 사용
+				따옴표로 감싸면 우선적으로 사용할 수 있다.
+
+				순위의 제일 끝에는 OS에서 알아서 선택할 수 있는 장식 폰트를 지정해준다.
+				serif : 장식이 있는 폰트
+				sans-serif : 장식이 없는 폰트
+				cursive : 흘림체
+				fantasy : 
+				monospace : 고정폭
+			*/
+			font-family: "arial", Times, serif;
+			
+			/* 폰트의 두께를 나타낸다, bold 또는 넓이 숫자 */
+			font-weight: bold;
+			
+			/* 폰트의 행사이의 간격을 지정한다. 기본값 1.2 */
+			line-height : 1.3;
+
+			/* 
+				폰트에 관련된 속성을 축약한다.
+				font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit
+				다음 순서를 지켜야한다. 
+			 */
+			font : 15px arial, sans-serif;
+		}
+	</style>
+	<title>Font</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Test</h1>
+</body>
+</html>

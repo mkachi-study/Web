@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#parent, #other{
+			border:5px solid tomato;
+		}
+		#large{
+			position:relative;
+			height:10000px;
+			background-color:tomato;
+		}
+		#me{
+			background-color:black;
+			color:white;
+			/* 
+				fixed는 스크롤과는 상관없이 화면에 고정된다.
+				부모와의 링크는 끊기게 된다.
+			*/
+			position:fixed;
+			left:0px;
+			top:0px;
+		}
+	</style>
+	<title>Position3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="other">other</div>
+	<div id="parent">
+		parent
+		<div id="me">me</div>
+	</div>
+	<div id="large">large</div>
+</body>
+</html>

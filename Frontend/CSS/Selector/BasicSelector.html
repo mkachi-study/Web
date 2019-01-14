@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>선택자</title>
+	<meta charset="utf-8">
+	<style>
+	/* 
+		태그 선택자
+		li는 selector 선택자, 이게 사용자가 지정하는 스타일 태그 
+		color는 프로퍼티이다.
+		red는 값
+		즉 color라는 프로퍼티를 red로 설정한다는 뜻
+	*/
+		li { 
+			color:red;
+			text-decoration: underline;
+		}
+		/*
+			아이디 선택자
+			Select라는 id를 가진 것만 효과의 영향을 받음
+			단 id는 겹치면 계약 위반이기 때문에 여러게를 한번에 줄 때에는
+			클래스 선택자를 사용하자
+		*/
+		#Select{
+			font-size:100px;
+		}
+		/*
+			클래스 선택자
+			class속성이 deactive인것들에 대해 스타일을 지정해줌
+		*/
+		.deactive{
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="deactive">HTML</li>
+		<li id="Select">CSS</li>
+		<li class="deactive">JavaScript</li>
+	</ul>
+</body>
+</html>

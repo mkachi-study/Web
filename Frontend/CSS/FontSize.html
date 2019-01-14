@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/* 
+			px : 모니터상의 화소 하나의 크기에 고정되는 크기이다. 사용자가 글꼴 크기를 조정할 수 없기 때문에 가급적 사용을 하지 않는다. 
+		*/
+		#px{font-size: 16px;}
+		/*
+			lrem : html 태그에 적용된 font-size의 영향을 받는다. 사용자가 직접 사이즈를 바꿀 수 있으므로 가장 바람직하다.
+		*/
+		#rem{font-size:lrem;}
+		/*
+			부모 태그의 영향을 받는 크기이다. 부모의 크기에 영향을 받기 때문에 파악하기 어렵다. 사용이 권장되지 않음.
+		*/
+		#em {font-size: em;}
+	</style>
+
+	<title>FontSize</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id-"px">PX</div>
+	<div id="rem">REM</div>
+	<div id="em">EM</div>
+</body>
+</html>

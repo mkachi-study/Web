@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+
+            /* grow의 기본값은 0이다. */
+            flex-grow: 1;
+        }
+        .item:nth-child(2) {
+            /* 만약 grow가 케스케이딩이 높을 경우 */
+            /* 적힌 숫자의 배수만큼 더 많은 여백을 할당받게됨 */
+            /* 만약 같은 컨테이너에서의 아이템들의 grow값이 0이고 */
+            /* 한가지만 1이상의 값을 지닐경우 혼자 모든 여백을 차지함 */
+            
+            /* 요약 : grow 값을 2로 설정하고 다른 item들이 1일 때 */
+            /* 다른 item들은 1 / n으로 넓이를 나누어 가지게 되고 */
+            /* 2번째 item은 1 / n한 넓이의 2배를 가지게 된다. */
+            flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div> <!-- nth-child(2) -->
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div> 
+    </div>    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#parent, #other{
+			border:5px solid tomato;
+		}
+		#parent{
+			position:relative;
+		}
+		#me{
+			background-color:black;
+			color:white;
+			/* 
+				absolute는 html태그를 기준으로 해서 움직인다. world좌표 
+				단 부모의 position이 static이 아닐경우 부모의 world좌표를 기준으로 한다.
+				부모와의 관계가 끊겨 자신의 크기가 딱 컨텐츠만 해진다.
+			*/
+			position:absolute;
+			left:0px;
+			top:0px;
+		}
+	</style>
+	<title>Position2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="other">other</div>
+	<div id="parent">
+		parent
+		<div id="me">me</div>
+	</div>
+</body>
+</html>

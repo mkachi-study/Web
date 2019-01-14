@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .Test:hover {
+                transform: rotate(20deg);
+                transform-origin: left bottom; /* pivot */
+            }
+            .Test2 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                border: 1px solid black;
+                transition-property: width, height;
+                transition-duration: 1s, 1s;
+                transition-delay: 1s, 2s;
+                transition: 2s ease-in;
+            }
+
+            .Test2:hover {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="Test2" src="Image/Sample1.png">
+    </body>
+</html>

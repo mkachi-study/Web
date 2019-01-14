@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form_Lavel</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="">
+		<p> <!-- 일반 택스트는 어떤 의미인지 알기 어렵다 -->
+			<!-- label을 사용할 경우 무언가의 이름표라는 것을 알 수있다. -->
+			<label>Text :</label>
+			<input type="text" name="id" value="default value">
+		</p>
+		<p>
+			<!-- for속성을 사용해서 어느 것의 이름표인지 명시해 줄수있다. -->
+			<!-- 명시 해줄 경우 라벨을 클릭할 시 명시된 것이 선택됨 -->
+			<label for="PWBox">Password :</label>
+			<input id="PWBox" type="password" name="pwd" value="default value">
+		</p>
+		<p>
+			<!-- for로 아이디를 명시해 주지 않아도 label로 감싸서도 가능하다. -->
+			<label>TextArea :
+				<textarea cols="50" rows="2">default value</textarea>
+			</label>
+		</p>
+	</form>
+</body>
+</html>

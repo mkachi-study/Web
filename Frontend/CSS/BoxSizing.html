@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{
+			/* 
+			다음과 같이 div태그들은 모두 같은 넓이를 지녔지만 
+			*/
+			margin:10px;
+			width:150px;
+			box-sizing:border-box;
+		}
+
+		/* 
+			small과 large의 border사이즈가 다르기 때문에
+			border크기도 포함해서 div의 넓이가 정해진다.
+			그래서 나온 속성이 box-sizing 속성이다.
+			기본값은 content-box이다.
+			컨텐츠 사이즈에 맞춘다는 속성이다.
+			이걸 border-box로 맞추면 border크기를 기준으로 한다.
+		*/
+		#small{
+			border:10px solid black;
+		}
+		#large{
+			border:30px solid black;
+		}
+	</style>
+	<title>BoxSizeing</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="small">Hell</div>
+	<div id="large">lllowwwww</div>
+</body>
+</html>

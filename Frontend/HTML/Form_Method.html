@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form_Method</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- 
+	method인자로 데이터를 전송하는 방식을 결정가능 
+	get방식은 주소에 데이터를 담아서 전송 예 : id="ttt"&pwd="123"
+	post방식은 주소가 아닌 전혀 다른 방식으로 데이터를 숨겨서 전송한다
+	대부분 post방식을 사용 get방식은 보안상 취약하다
+	-->
+	<form action="http://localhost/method.php" method="post">
+		<input type="text" name="id">
+		<input type="password" name="pwd">
+		<input type="submit">
+	</form>
+</body>
+</html>

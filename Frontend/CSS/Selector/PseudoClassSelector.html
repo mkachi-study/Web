@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>가상클래스선택자</title>
+	<meta charset="utf-8">
+	<style>
+	/*
+		태그의 상태에 따라서 스타일이 적용됨
+		게임프로그래밍의 depth처럼 선언의 우선순위의 영향을 받음
+	*/
+		a:link{
+			color:black;
+		}
+		a:visited{
+			color:red;
+		}
+		a:hover{
+			color:yellow;
+		}
+		a:active{
+			color:green;
+		}
+		input:focus{
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<a href="http://www.naver.com/">방문함</a>
+		<a href="http://a.a/">방문안함</a>
+		<input type="text">
+	</ul>
+</body>
+</html>

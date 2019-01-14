@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RadioAndCheckBox</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="http://localhost/order.php">
+			<!-- 라디오 버튼은 같은 name값을 지닌 것끼리 그룹이 된다. -->
+			<!-- checked 옵션은 기본으로 선택되는 속성이다. -->
+			<p>
+				<h1>색상 (단일 선택)</h1>
+				<input type="radio" name="color" value="color_1">
+				<input type="radio" name="color" value="color_2" checked>
+				<input type="radio" name="color" value="color_3">
+			</p>
+
+			<p>
+				<input type="radio" name="color2" value="color2_1">
+				<input type="radio" name="color2" value="color2_2" checked>
+				<input type="radio" name="color2" value="color2_3">
+			</p>
+
+			<p>
+				<h1>사이즈 (다중 선택)</h1>
+				<input type="checkbox" name="size" value="size_1">
+				<input type="checkbox" name="size" value="size_2" checked>
+				<input type="checkbox" name="size" value="size_3">
+			</p>
+			<input type="submit">
+		</form>
+</body>
+</html>
