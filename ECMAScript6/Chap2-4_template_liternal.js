@@ -21,9 +21,9 @@ var str5 = `a + b = ${a + b}입니다.`;
 console.log(str5);
 
 function test(str, a, b) {
-    let bigger;
-    (a > b) ? bigger = "A" : bigger = "B";
-    return str[0] + bigger + "가 더 큽니다.";
+	let bigger;
+	a > b ? (bigger = "A") : (bigger = "B");
+	return str[0] + bigger + "가 더 큽니다.";
 }
 
 let str6 = test`A와 B 둘 중 ${a}, ${b}`;
