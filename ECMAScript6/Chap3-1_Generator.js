@@ -50,30 +50,56 @@ function* generator4() {
     yield new Promise(function (resolve) {
         setTimeout(function () {
             resolve(1);
-        }, 3000);
+        }, 1000);
     });
 
     yield new Promise(function (resolve) {
         setTimeout(function () {
             resolve(2);
-        }, 3000);
-    });
-
-    yield new Promise(function (resolve) {
-        setTimeout(function () {
-            resolve(3);
-        }, 3000);
-    });
-
-    yield new Promise(function (resolve) {
-        setTimeout(function () {
-            resolve(4);
-        }, 3000);
+        }, 1000);
     });
 }
 
 let iterator4 = generator4();
 for (let iter of iterator4) {
+    iter.then(function (value) {
+        console.log(value);
+    });
+}
+
+function* generator5() {
+    function getValue(value) {
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                resolve(value);
+            }, 1000);
+        });
+    }
+
+    yield getValue(3);
+    yield getValue(4);
+}
+
+async function asyncPrint() {
+    let iterator5 = generator5();
+    for (let iter of iterator5) {
+        console.log(await iter);
+    }
+}
+asyncPrint();
+
+function* generator6() {
+    async function getValue(value) {
+        await setTimeout(function () { }, 10000);
+        return value;
+    }
+
+    yield getValue(5);
+    yield getValue(6);
+}
+
+let iterator6 = generator6();
+for (let iter of iterator6) {
     iter.then(function (value) {
         console.log(value);
     });
