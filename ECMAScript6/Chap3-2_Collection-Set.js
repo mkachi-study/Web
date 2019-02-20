@@ -25,14 +25,14 @@ console.log(set3);
 
 let keys = set2.keys();
 for (let value of keys) {
-    console.log(value);
+	console.log(value);
 }
 
 let set4 = new Set({ a: 1, b: 1 });
 // Key, Value와 같이 값이 쌍으로 이루어진 컨테이너가 아니라면 entries와 같다.
 let keys4 = set4.keys(); // values도...
 for (let value of keys4) {
-    console.log(value);
+	console.log(value);
 }
 
 set4.clear();

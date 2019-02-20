@@ -3,7 +3,7 @@ let map1 = new Map();
 
 console.log(map1.size);
 
-let f = function () { };
+let f = function() {};
 map1.set(f, 100);
 console.log(map1.size);
 
@@ -46,8 +46,8 @@ console.log(mapIterator.next());
 console.log(mapIterator.next());
 
 console.log("=== forEach ===");
-map1.forEach(function (value, key) {
-    console.log(value, key);
+map1.forEach(function(value, key) {
+	console.log(value, key);
 });
 
 console.log("=== has ===");
@@ -56,7 +56,7 @@ map1.set(object, 100);
 map1.set("A", 100);
 
 if (map1.has("A")) {
-    console.log("A라는 키값을 가지고 있음");
+	console.log("A라는 키값을 가지고 있음");
 }
 
 console.log("=== keys ===");
