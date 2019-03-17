@@ -1,4 +1,4 @@
-₩let arr = [1, 2, 3, 4];
+let arr = [1, 2, 3, 4];
 let arr2 = [0, arr[0], arr[1], arr[2], 5];
 console.log(arr2);
 
