@@ -1,2 +1,2 @@
-# Web-Study
+# Web
 Web study repository
